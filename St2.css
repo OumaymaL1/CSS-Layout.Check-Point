@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,200;1,600;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: "Titillium Web", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.body {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("VA2.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeImg-Hoover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  background: transparent;
+  transition: 3s;
+}
+
+/* .homeImg-Hoover:hover {
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0.7;
+} */
+
+.card {
+  width: 320px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  /* border: 3px solid #42403ed0; */
+  /* box-shadow: 0 15px 35px rgba(40, 33, 33, 0.75); */
+}
+
+.card .poster {
+  position: relative;
+  overflow: hidden;
+}
+
+.card .poster img {
+  width: 100%;
+}
+
+.card-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #5c3b0237;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: bisque;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  transition: 2s;
+}
+
+.card:hover .card-body {
+  right: 0;
+}
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 33px;
+  font-weight: 500;
+}
+
+.card-sub-title {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.card-info {
+  font-size: 15px;
+  line-height: 25px;
+  margin: 30px 0;
+  font-weight: 400;
+}
+
+.card-btn {
+  color: #3f2801;
+  background: bisque;
+  width: 160px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* 
+.showcase {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  background: #111;
+  color: #fff;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.logo img {
+  width: 18%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  filter: invert(1);
+  margin-left: -5%;
+  margin-right: -4%;
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url("https://i.ibb.co/HrfVRcx/menu.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.toggle.active {
+  background: url("https://i.ibb.co/rt3HybH/close.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+} */
